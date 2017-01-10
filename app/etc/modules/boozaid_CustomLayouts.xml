@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+ <modules>
+  <boozaid_CustomLayouts>
+   <codePool>local</codePool>
+   <active>true</active>
+  </boozaid_CustomLayouts>
+ </modules>
+</config>

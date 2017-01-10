@@ -1,0 +1,360 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     rwd_default
+ * @copyright   Copyright (c) 2006-2016 X.commerce, Inc. and affiliates (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php
+/**
+ * Template for Mage_Page_Block_Html
+ */
+?>
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7 ]> <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js"> <!--<![endif]-->
+
+<head>
+<?php echo $this->getChildHtml('head') ?>
+</head>
+<body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
+<?php echo $this->getChildHtml('after_body_start') ?>
+<div class="wrapper">
+    <?php echo $this->getChildHtml('global_notices') ?>
+    <div class="page">
+        <?php echo $this->getChildHtml('header') ?>
+        <div class="main-container col1-layout">
+            <div class="main">
+                <div class="col-main">
+                    <?php echo $this->getChildHtml('global_messages') ?>
+
+                    <div class="options">
+                    	<h2>Frequently Asked Questions</h2>
+                    	<ul>
+							<li>
+								<a href="#first">
+									What is Boozaid?
+								</a>
+							</li>
+							<li>
+								<a href="#second">
+									How do I take BoozAid?
+								</a>
+							</li>
+							<li>
+								<a href="#third">
+									What are the Boozaid Ingredients?
+								</a>
+							</li>
+							<li>
+								<a href="#fourth">
+									Shipping Information
+								</a>
+							</li>
+							<li>
+								<a href="#fifth">
+									What are the side effects?
+								</a>
+							</li>
+							<li>
+								<a href="#sixth">
+									Can I take BoozAid if I have a medical issue?
+								</a>
+							</li>
+							<li>
+								<a href="#seventh">
+									Age limit for BoozAid
+								</a>
+							</li>
+						</ul>
+                    </div>
+                    <!-- content -->
+                    <div class="accordion">
+						<dl>
+							
+							<!-- First Accordion-->
+							
+							<dt id="first">
+								<a href="#accordion1" aria-expanded="true" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">
+									What is Boozaid?
+								</a>
+							</dt>
+							<dd class="accordion-content accordionItem is-collapsed" id="accordion1" aria-hidden="true">
+								<div class="accordion-content-inner">
+									<p>
+										BoozAid is physician-formulated, combining bona fide science with wholesome beneficial ingredients.
+									</p>
+								</div>
+							</dd>
+
+							<!-- Second Accordion-->
+							
+							<dt id="second">
+								<a href="#accordion2" aria-expanded="true" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">
+									How do I take BoozAid?
+								</a>
+							</dt>
+							<dd class="accordion-content accordionItem is-collapsed" id="accordion2" aria-hidden="true">
+								<div class="accordion-content-inner">
+									<p>
+										It is best to take two BoozAid with a large drink of water before bedtime to minimize the morning after effect of partying. If you suffer from Asian Glow, take 2 BoozAid 45 minutes prior to partying.
+									</p>
+								</div>
+							</dd>
+
+							<!-- Third Accordion-->
+							
+							<dt id="third">
+								<a href="#accordion3" aria-expanded="true" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">
+									What are the Boozaid Ingredients?
+								</a>
+							</dt>
+							<dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+								<div class="accordion-content-inner">
+									<p>
+										Milk Thistle has been used for over two thousand years due to its remarkable cleansing and support of the liver. Research has proven that thistle helps with:
+									</p>
+
+									<ul>
+										<li>The detoxification of poisons—such as alcohol</li>
+										<li>The regeneration of damaged liver tissue</li>
+										<li>Improved digestion</li>
+									</ul>
+											 
+									<p>
+										<strong>Oriental Raisin Tree</strong> , one of the most powerful substances in BoozAid, is harvested from the Holvenia Dulcis plant. In Asia, for over a thousand years, this plant has been used to brew a special tea that aids in the discomfort that results from a night of partying. Only recently has the active ingredient, Dihydromyricetin (a natural plant flavonoid), been isolated and extracted from the the Oriental Raisin Tree.
+									</p>
+											 
+									<p>
+										<strong>B Vitamins / Thiamine NAC</strong> is thought to work even better when combined with thiamine (also known as vitamin B6). Vitamin B6 may also help lessen hangover symptoms. Since alcohol depletes vitamin B in the body, and B vitamins are required to help eliminate alcohol from the body, a B-vitamin supplement should be taken beforehand, as well as the next day.
+									</p>
+											 
+									<p>
+										<strong>Glutamine</strong> Ingesting glutamine will help to minimize reaction known asglutamine rebound. Alcohol inhibits glutamine, a natural stimulant in your body. This is partly why alcohol has a depressive effect that may make you fall asleep easily.
+									</p>
+											 
+									<p>
+										<strong>Magnesium</strong>, Another nutrient depleted by alcohol, and it’s one in which many are already deficient. Plus, magnesium has anti-inflammatory properties that may help to reduce certain hangover symptoms such as pounding headache.
+									</p>
+											 
+									<p>
+										<strong>Acerole Berry</strong> Extract is very high in vitamins A and C. It also contains thiamine and riboflavin, which are known to be natural energy boosters.
+									</p>
+											 
+									<p>
+										<strong>Bupleurum Root Powder</strong> Ingesting glutamine will help to minimize reaction known as glutamine rebound. Has been known to combat fatigue, headaches, insomnia and depression. It also assists in protecting the liver.
+									</p>
+											 
+									<p>
+										<strong>Artichoke Leaf Powder (Cilarin)</strong> is ideal for hangovers as it decreases nausea and vomiting.
+									</p>
+											 
+									<p>
+										<strong>Kudzu Powder</strong> is beneficial in boosting the metabolism and detoxifying. Studies have also shown that kudzu can curb the craving for alcohol and lessen symptoms of alcohol withdrawal.
+									</p>
+								</div>
+							</dd>
+
+							<!-- Fourth Accordion-->
+							
+							<dt id="fourth">
+								<a href="#accordion4" aria-expanded="true" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">
+									How do I take BoozAid?
+								</a>
+							</dt>
+							<dd class="accordion-content accordionItem is-collapsed" id="accordion4" aria-hidden="true">
+								<div class="accordion-content-inner">
+									<p>
+										It is best to take two BoozAid with a large drink of water before bedtime to minimize the morning after effect of partying. If you suffer from Asian Glow, take 2 BoozAid 45 minutes prior to partying.
+									</p>
+								</div>
+							</dd>
+
+							<!-- Fifth Accordion-->
+							
+							<dt id="fifth">
+								<a href="#accordion5" aria-expanded="true" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">
+									Shipping Information
+								</a>
+							</dt>
+							<dd class="accordion-content accordionItem is-collapsed" id="accordion5" aria-hidden="true">
+								<div class="accordion-content-inner">
+									<ol type="1">
+										<li>
+											<strong>When will I receive my package?</strong><br/> 
+											US domestic shipping takes 5-10 days to arrive. 15-40 days for international. For faster shipping, see BoozAid on our Amazon Store
+										</li>
+
+										<li>	
+											<strong>What mailing company do you use?</strong><br/> 
+											We ship through United States Postal Service (USPS) regular shipping
+										</li>
+										
+										<li>
+											<strong>What is the shipping cost?</strong><br/> 
+											USPS shipping is free for orders more than $20.00 and for international will depend on the country (generally $10-$20)
+										</li>
+										
+										<li>
+											<strong>Can I track my order?</strong><br/>
+											USPS facility will scan and process order during business hours and be available for tracking 24-48 hours after processing.
+										</li>
+										
+										<li>
+											<strong>Can you email me my order tracking link?</strong><br/> 
+											BoozAid can email you tracking link to your order so you can track order status and location of processing.
+										</li>
+										
+										<li>
+											<strong>I have not received my package, what should I do?</strong><br/>
+											BoozAId will let you know your package’s last location on tracking system and tracking number through email. Contact your post office with tracking number to locate your package.
+										</li>
+										
+										<li>
+											<strong>Tracking says package has been “Delivered” but I did not receive it, what should I do?</strong><br/>
+											Contact your post office with tracking number to locate package. Post office will hold package for 30 days because they may have it on hold for you. If unclaimed for 30 days, it will be sent back as unclaimed.
+										</li>
+										
+										<li>
+											<strong>Can I change or cancel my order?</strong><br/>
+											We can only make changes prior to processing. Please email us as soon as possible with changes.
+										</li>
+									</ol>
+								</div>
+							</dd>
+
+							<!-- Sixth Accordion-->
+							
+							<dt id="sixth">
+								<a href="#accordion6" aria-expanded="true" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">
+									What are the side effects?
+								</a>
+							</dt>
+							<dd class="accordion-content accordionItem is-collapsed" id="accordion6" aria-hidden="true">
+								<div class="accordion-content-inner">
+									<p>
+										BoozAid is made from natural ingredients, vitamins and minerals. However everyone is different and can react different. Check ingredients if you have allergies. If you experience any effect, please consult your medical professional.
+									</p>
+								</div>
+							</dd>
+
+							<!-- Seventh Accordion-->
+							
+							<dt id="seventh">
+								<a href="#accordion7" aria-expanded="true" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">
+									Can I take BoozAid if I have a medical issue?
+								</a>
+							</dt>
+							<dd class="accordion-content accordionItem is-collapsed" id="accordion7" aria-hidden="true">
+								<div class="accordion-content-inner">
+									<p>
+										You must not rely on the information on http://www.boozaid.com as an alternative to medical advise from your doctor. If you have any specific questions about medical issues, you should consult with your doctor
+									</p>
+								</div>
+							</dd>
+						</dl>
+					</div>
+                    <!-- end of content -->
+                </div>
+            </div>
+        </div>
+        <?php echo $this->getChildHtml('footer_before') ?>
+        <?php echo $this->getChildHtml('footer') ?>
+        <?php echo $this->getChildHtml('global_cookie_notice') ?>
+        <?php echo $this->getChildHtml('before_body_end') ?>
+    </div>
+</div>
+<?php echo $this->getAbsoluteFooter() ?>
+
+
+
+<script type="text/javascript">
+          //uses classList, setAttribute, and querySelectorAll
+//if you want this to work in IE8/9 youll need to polyfill these
+(function(){
+  var d = document,
+  accordionToggles = d.querySelectorAll('.js-accordionTrigger'),
+  setAria,
+  setAccordionAria,
+  switchAccordion,
+  touchSupported = ('ontouchstart' in window),
+  pointerSupported = ('pointerdown' in window);
+  
+  skipClickDelay = function(e){
+    e.preventDefault();
+    e.target.click();
+  }
+
+    setAriaAttr = function(el, ariaType, newProperty){
+    el.setAttribute(ariaType, newProperty);
+  };
+  setAccordionAria = function(el1, el2, expanded){
+    switch(expanded) {
+      case "true":
+        setAriaAttr(el1, 'aria-expanded', 'true');
+        setAriaAttr(el2, 'aria-hidden', 'false');
+        break;
+      case "false":
+        setAriaAttr(el1, 'aria-expanded', 'false');
+        setAriaAttr(el2, 'aria-hidden', 'true');
+        break;
+      default:
+        break;
+    }
+  };
+//function
+switchAccordion = function(e) {
+  console.log("triggered");
+  e.preventDefault();
+  var thisAnswer = e.target.parentNode.nextElementSibling;
+  var thisQuestion = e.target;
+  if(thisAnswer.classList.contains('is-collapsed')) {
+    setAccordionAria(thisQuestion, thisAnswer, 'true');
+  } else {
+    setAccordionAria(thisQuestion, thisAnswer, 'false');
+  }
+    thisQuestion.classList.toggle('is-collapsed');
+    thisQuestion.classList.toggle('is-expanded');
+    thisAnswer.classList.toggle('is-collapsed');
+    thisAnswer.classList.toggle('is-expanded');
+  
+    thisAnswer.classList.toggle('animateIn');
+  };
+  for (var i=0,len=accordionToggles.length; i<len; i++) {
+    if(touchSupported) {
+      accordionToggles[i].addEventListener('touchstart', skipClickDelay, false);
+    }
+    if(pointerSupported){
+      accordionToggles[i].addEventListener('pointerdown', skipClickDelay, false);
+    }
+    accordionToggles[i].addEventListener('click', switchAccordion, false);
+  }
+})();
+</script>
+</body>
+</html>
+

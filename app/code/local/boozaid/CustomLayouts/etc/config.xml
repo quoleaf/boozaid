@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config>
+ 	<global>
+  		<page>
+   			<layouts>
+    			<landingpage>
+     				<label>Landing Page</label>
+     				<template>page/landingpage.phtml</template>
+    			</landingpage>
+   			</layouts>
+  		</page>
+
+  		<page>
+   			<layouts>
+    			<faq>
+     				<label>FAQ</label>
+     				<template>page/faq.phtml</template>
+    			</faq>
+   			</layouts>
+  		</page>
+
+  		<page>
+   			<layouts>
+    			<contactus>
+     				<label>Contact Us</label>
+     				<template>page/contactus.phtml</template>
+    			</contactus>
+   			</layouts>
+  		</page>
+ 	</global>
+</config>

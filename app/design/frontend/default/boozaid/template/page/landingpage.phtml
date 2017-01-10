@@ -1,0 +1,355 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     rwd_default
+ * @copyright   Copyright (c) 2006-2016 X.commerce, Inc. and affiliates (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php
+/**
+ * Template for Mage_Page_Block_Html
+ */
+?>
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7 ]> <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js"> <!--<![endif]-->
+
+<head>
+	<?php echo $this->getChildHtml('head') ?>
+</head>
+<body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
+<?php echo $this->getChildHtml('after_body_start') ?>
+<div class="mainWrapper">
+    <div id="topBar">
+        <div class="section">
+            <?php
+                $product=Mage::getModel('catalog/product')->load(2);
+            ?>
+            <a href="<?php echo Mage::getBaseUrl(); ?>" class="logo"><img src="<?php echo $this->getSkinUrl(); ?>images/logo.png" alt=""/></a>
+            <a href="<?php echo Mage::getBaseUrl(); ?>" class="redBtn buyNow">BUY NOW</a>
+            <div id="navigation">
+                <ul>
+                    <li><a href="https://www.amazon.com/BoozAid-Supplement-Helps-Relief-Liver-Replenishment-Reduce-Hangovers-Scientifically/product-reviews/B01D26MZVU/ref=dp_db_cm_cr_acr_txt?ie=UTF8&showViewpoints=1">REVIEWS</a></li>
+                    <li><a href="<?php echo Mage::getBaseUrl(); ?>faq">FAQ</a></li>
+                    <li><a href="https://boozaid.com/blog/">BLOG</a></li>
+                    <li><a href="<?php echo Mage::getBaseUrl(); ?>contactus">CONTACT</a></li>
+                </ul>
+            </div>
+            <a href="javascript:void(0);" id="menuBtn"><span></span><span></span><span></span></a>
+        </div>
+    </div>
+    <!-- END topBar -->
+
+
+<div id="intro">
+	<div class="section">
+		<p class="title">
+			FINALLY, SOMETHING THAT <span>ACTUALLY</span> WORKS!™
+		</p>
+		<p class="subtitle">
+			A scientifically formulated supplement developed for drinkers interested in <strong>feeling better</strong> after a night of excessive partying… and for those who experience <strong>redness</strong> after a drink.
+		</p>
+		<div class="benefits">
+			<ul>
+				<li>Avoid Discomfort</li>
+				<li>Physician Formulated</li>
+				<li>Nature-Inspired Ingredients</li>
+				<li>Support Brain &amp; Liver Health</li>
+				<li>Replace crucial electrolytes and vitamins</li>
+				<li>Fast Acting</li>
+			</ul>
+		</div>
+		<div class="info clearfix">
+			<div class="video">
+				<a href="http://www.youtube.com/watch?v=rRjVXni3fCY" class="fancybox-media"><img src="<?php echo $this->getSkinUrl(); ?>images/video.png" alt=""/><span>CLICK TO LEARN MORE</span></a>
+			</div>
+			<div class="product">
+				<?php
+			                $product=Mage::getModel('catalog/product')->
+				load(2); ?> <a href="<?php echo mage::helper('checkout/cart')->getAddUrl($product);?>" class="image"><img src="<?php echo $this->getSkinUrl(); ?>images/product-single-image.png" alt=""/></a>
+				<div class="details">
+					<span class="price">$4.99<em>SINGLE SERVING</em></span>
+					<a href="<?php echo mage::helper('checkout/cart')->getAddUrl($product);?>" class="redBtn buyNow">BUY NOW</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END intro -->
+<div id="asSeenOn">
+	<h1>AS SEEN ON</h1>
+	<ul class="slides">
+		<li><a href="#"><img src="<?php echo $this->getSkinUrl(); ?>images/yahoo-finance-logo.png" alt=""/></a></li>
+		<li><a href="#"><img src="<?php echo $this->getSkinUrl(); ?>images/business-review-logo.png" alt=""/></a></li>
+		<li><a href="#"><img src="<?php echo $this->getSkinUrl(); ?>images/los-angles-business-logo.png" alt=""/></a></li>
+		<li><a href="#"><img src="<?php echo $this->getSkinUrl(); ?>images/pr-newswire-logo.png" alt=""/></a></li>
+		<li><a href="#"><img src="<?php echo $this->getSkinUrl(); ?>images/reuters-logo.png" alt=""/></a></li>
+		<li><a href="#"><img src="<?php echo $this->getSkinUrl(); ?>images/business-weekly-logo.png" alt=""/></a></li>
+	</ul>
+</div>
+<!-- END asSeenOn -->
+<div id="reviews">
+	<div class="section">
+		<h1>REVIEWS</h1>
+		<ul class="messages">
+			<li>
+			<span class="rating"><em style="width: 100%"></em></span>
+			<blockquote>
+				“Everybody enjoyed our wedding celebration! Thanks to BoozAid.”<cite>- Anne &amp; Mike</cite>
+			</blockquote>
+			</li>
+			<li>
+			<span class="rating"><em style="width: 80%"></em></span>
+			<blockquote>
+				“Everybody enjoyed our wedding celebration! Thanks to BoozAid.”<cite>- Anne &amp; Mike</cite>
+			</blockquote>
+			</li>
+			<li>
+			<span class="rating"><em style="width: 60%"></em></span>
+			<blockquote>
+				“Everybody enjoyed our wedding celebration! Thanks to BoozAid.”<cite>- Anne &amp; Mike</cite>
+			</blockquote>
+			</li>
+			<li>
+			<span class="rating"><em style="width: 40%"></em></span>
+			<blockquote>
+				“Everybody enjoyed our wedding celebration! Thanks to BoozAid.”<cite>- Anne &amp; Mike</cite>
+			</blockquote>
+			</li>
+		</ul>
+		<div class="videos">
+			<ul class="slides">
+				<li><a href="http://www.youtube.com/watch?v=vAmncq-B0eA" class="fancybox-media"><img src="<?php echo $this->getSkinUrl(); ?>images/video.png" alt=""/></a></li>
+				<li><a href="http://www.youtube.com/watch?v=kZZJtlhxl3U" class="fancybox-media"><img src="<?php echo $this->getSkinUrl(); ?>images/video.png" alt=""/></a></li>
+				<li><a href="http://www.youtube.com/watch?v=qFxaLPdC5ww" class="fancybox-media"><img src="<?php echo $this->getSkinUrl(); ?>images/video.png" alt=""/></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- END reviews -->
+<div class="blueBar">
+	<a href="#order" class="redBtn customBuyButton">BUY NOW</a>
+</div>
+<div id="celebrities">
+	<div class="section">
+		<h1>CELEBRITIES &lt;3 BOOZAID!</h1>
+		<ul class="images">
+			<li><a href="<?php echo $this->getSkinUrl(); ?>images/celebrity-image-full01.jpg" class="fancybox" ><img src="<?php echo $this->getSkinUrl(); ?>images/celebrity-image-thumb01.jpg" alt=""/></a></li>
+			<li><a href="<?php echo $this->getSkinUrl(); ?>images/celebrity-image-full02.jpg" class="fancybox" ><img src="<?php echo $this->getSkinUrl(); ?>images/celebrity-image-thumb02.jpg" alt=""/></a></li>
+			<li><a href="<?php echo $this->getSkinUrl(); ?>images/celebrity-image-full03.jpg" class="fancybox" ><img src="<?php echo $this->getSkinUrl(); ?>images/celebrity-image-thumb03.jpg" alt=""/></a></li>
+			<li><a href="<?php echo $this->getSkinUrl(); ?>images/celebrity-image-full04.jpg" class="fancybox" ><img src="<?php echo $this->getSkinUrl(); ?>images/celebrity-image-thumb04.jpg" alt=""/></a></li>
+			<li><a href="<?php echo $this->getSkinUrl(); ?>images/celebrity-image-full05.jpg" class="fancybox" ><img src="<?php echo $this->getSkinUrl(); ?>images/celebrity-image-thumb05.jpg" alt=""/></a></li>
+		</ul>
+	</div>
+</div>
+<!-- END celebrities -->
+<div id="faqs">
+	<div class="section">
+		<h1>FREQUENTLY ASKED QUESTIONS</h1>
+		<dl>
+			<dt>What is Boozaid?</dt>
+			<dd>
+			<p>
+				BoozAid is physician-formulated, combining bona fide science with wholesome beneficial ingredients.
+			</p>
+			</dd>
+			<dt>How do I take BoozAid?</dt>
+			<dd>
+			<p>
+				It is best to take two BoozAid with a large drink of water before bedtime to minimize the morning after effect of partying. If you suffer from Asian Glow, take 2 BoozAid 45 minutes prior to partying.
+			</p>
+			</dd>
+			<dt>What are the Boozaid Ingredients?</dt>
+			<dd>
+			<p>
+				 Milk Thistle has been used for over two thousand years due to its remarkable cleansing and support of the liver. Research has proven that thistle helps with:<br>
+			</p>
+			<ul class="ingred1">
+				<li>The detoxification of poisons — such as alcohol</li>
+				<li>The regeneration of damaged liver tissue</li>
+				<li>Improved digestion</li>
+			</ul>
+			<ul class="ingred2">
+				<li>
+				<strong>Oriental Raisin Tree</strong> , one of the most powerful substances in BoozAid, is harvested from the Holvenia Dulcis plant. In Asia, for over a thousand years, this plant has been used to brew a special tea that aids in the discomfort that results from a night of partying. Only recently has the active ingredient, Dihydromyricetin (a natural plant flavonoid), been isolated and extracted from the the Oriental Raisin Tree. </li>
+				<li>
+				<strong>B Vitamins / Thiamine NAC</strong> is thought to work even better when combined with thiamine (also known as vitamin B6). Vitamin B6 may also help lessen hangover symptoms. Since alcohol depletes vitamin B in the body, and B vitamins are required to help eliminate alcohol from the body, a B-vitamin supplement should be taken beforehand, as well as the next day. </li>
+				<li>
+				<strong>Glutamine</strong> Ingesting glutamine will help to minimize reaction known asglutamine rebound. Alcohol inhibits glutamine, a natural stimulant in your body. This is partly why alcohol has a depressive effect that may make you fall asleep easily. </li>
+				<li>
+				<strong>Magnesium</strong>, Another nutrient depleted by alcohol, and it’s one in which many are already deficient. Plus, magnesium has anti-inflammatory properties that may help to reduce certain hangover symptoms such as pounding headache. </li>
+				<li>
+				<strong>Acerole Berry Extract</strong> is very high in vitamins A and C. It also contains thiamine and riboflavin, which are known to be natural energy boosters. </li>
+				<li>
+				<strong>Bupleurum Root Powder</strong> Ingesting glutamine will help to minimize reaction known as glutamine rebound. Has been known to combat fatigue, headaches, insomnia and depression. It also assists in protecting the liver. </li>
+				<li>
+				<strong>Artichoke Leaf Powder (Cilarin)</strong> is ideal for hangovers as it decreases nausea and vomiting. </li>
+				<li>
+				<strong>Kudzu Powder</strong> is beneficial in boosting the metabolism and detoxifying. Studies have also shown that kudzu can curb the craving for alcohol and lessen symptoms of alcohol withdrawal. </li>
+			</ul>
+			</dd>
+			<dt>Shipping Information</dt>
+			<dd>
+			<p>
+				<ol type="1" class="numeric">
+					<li>
+					<strong>When will I receive my package?</strong><br>
+					 US domestic shipping takes 5-10 days to arrive. 15-40 days for international. For faster shipping, see BoozAid on our Amazon Store </li>
+					<li>
+					<strong>What mailing company do you use?</strong><br>
+					 We ship through United States Postal Service (USPS) regular shipping </li>
+					<li>
+					<strong>What is the shipping cost?</strong><br>
+					 USPS shipping is free for orders more than $20.00 and for international will depend on the country (generally $10-$20) </li>
+					<li>
+					<strong>Can I track my order?</strong><br>
+					 USPS facility will scan and process order during business hours and be available for tracking 24-48 hours after processing. </li>
+					<li>
+					<strong>Can you email me my order tracking link?</strong><br>
+					 BoozAid can email you tracking link to your order so you can track order status and location of processing. </li>
+					<li>
+					<strong>I have not received my package, what should I do?</strong><br>
+					 BoozAId will let you know your package’s last location on tracking system and tracking number through email. Contact your post office with tracking number to locate your package. </li>
+					<li>
+					<strong>Tracking says package has been “Delivered” but I did not receive it, what should I do?</strong><br>
+					 Contact your post office with tracking number to locate package. Post office will hold package for 30 days because they may have it on hold for you. If unclaimed for 30 days, it will be sent back as unclaimed. </li>
+					<li>
+					<strong>Can I change or cancel my order?</strong><br>
+					 We can only make changes prior to processing. Please email us as soon as possible with changes. </li>
+				</ol>
+			</p>
+			</dd>
+			<dt>What are the side effects?</dt>
+			<dd>
+			<p>
+				BoozAid is made from natural ingredients, vitamins and minerals. However everyone is different and can react different. Check ingredients if you have allergies. If you experience any effect, please consult your medical professional.
+			</p>
+			</dd>
+			<dt>Can I take BoozAid if I have a medical issue?</dt>
+			<dd>
+			<p>
+				You must not rely on the information on <?php echo Mage::getBaseUrl(); ?> as an alternative to medical advise from your doctor. If you have any specific questions about medical issues, you should consult with your doctor
+			</p>
+			</dd>
+			<dt>Age limit for BoozAid</dt>
+			<dd>
+			<p>
+				Boozaid limit is 21 and up.
+			</p>
+			</dd>
+		</dl>
+	</div>
+</div>
+<!-- END faqs -->
+<div id="order">
+	<div class="section clearfix">
+		<h1>ORDER YOUR BOOZAID TODAY!</h1>
+		<div class="double">
+			
+			<p class="mobilePrice">
+				DOUBE SERVING - <span>$8.99</span>
+			</p>
+
+			<?php
+				$double_serving = Mage::getModel('catalog/product')->load(1); 
+				$double_serving_url = $double_serving->getProductUrl();
+			?>
+
+			<a href="<?php echo $double_serving_url ?>" class="image">
+				<img src="<?php echo $this->getSkinUrl(); ?>images/product-double-image.png" alt=""/>
+			</a>
+			<div class="details">
+				<p class="price">
+					$8.99<span>DOUBLE SERVING<em>GET $3.00 DISCOUNT</em></span>
+				</p>
+				<p class="code">
+					USE CODE: INTRO
+				</p>
+				<?php $product=Mage::getModel('catalog/product')->load(1); ?>
+				<a href="<?php echo mage::helper('checkout/cart')->getAddUrl($product);?>" class="redBtn">ADD TO CART</a>
+			</div>
+		</div>
+		<div class="single">
+			
+			<p class="mobilePrice">
+				SINGLE SERVING - <span>$4.99</span>
+			</p>
+
+			<?php
+				$single_serving = Mage::getModel('catalog/product')->load(2); 
+				$single_serving_url = $single_serving->getProductUrl();
+			?>
+
+			<a href="<?php echo $single_serving_url ?>" class="image">
+				<img src="<?php echo $this->getSkinUrl(); ?>images/product-single-image.png" alt=""/>
+			</a>
+			<div class="details">
+
+				<p class="price">
+					$4.99<span>SINGLE SERVING<em>&nbsp;</em></span>
+				</p>
+
+				<p class="code">
+					&nbsp;
+				</p>
+
+				<?php $product=Mage::getModel('catalog/product')->load(2); ?>
+				<a href="<?php echo mage::helper('checkout/cart')->getAddUrl($product);?>" class="redBtn">ADD TO CART</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END order -->
+	
+
+<div id="footer">
+			<div class="section">
+			
+			</div>
+	</div><!-- END footer -->
+	
+</div> <!-- END Main Wrapper -->
+
+<div style="position:fixed;bottom:2px;left:2px;z-index:9999;">
+  <div class="web_seal seal" seal_type="version1"></div>
+</div>  
+
+<!--Doctor Certified Code -->
+<script type="text/javascript" src="https://doctor-certified.com/web_seal/get_webseal3.js"></script>
+<script>var WebSeal=new getWebSeal("3816_557","web_seal")</script>
+<!--End of Doctor Certified Code -->
+
+	<script src="<?php echo $this->getSkinUrl(); ?>js/boozaidjs/jquery-1.11.2.min.js"></script>
+	<script src="<?php echo $this->getSkinUrl(); ?>js/boozaidjs/slick.min.js"></script>
+	<script src="<?php echo $this->getSkinUrl(); ?>js/boozaidjs/jquery.fancybox.pack.js"></script>
+	<script src="<?php echo $this->getSkinUrl(); ?>js/boozaidjs/jquery.fancybox-media.js"></script>
+	<script src="<?php echo $this->getSkinUrl(); ?>js/boozaidjs/jquery.mmenu.all.min.js"></script>
+	<script src="<?php echo $this->getSkinUrl(); ?>js/boozaidjs/jquery.placeholder.min.js"></script>
+	<script src="<?php echo $this->getSkinUrl(); ?>js/boozaidjs/custom.js"></script>
+
+	</body>
+</html>
