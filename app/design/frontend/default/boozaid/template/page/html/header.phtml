@@ -27,22 +27,44 @@
  * @var Mage_Page_Block_Html_Header $this
  */
 ?>
-<div id="mainWrapper">
+<div class="mainWrapper">
     <div id="topBar">
+        <div class="FreeShipping">
+            <img src="<?php echo $this->getSkinUrl(); ?>images/free-shipping.gif">
+        </div>
         <div class="section">
             <?php
                 $product=Mage::getModel('catalog/product')->load(2);
             ?>
-            <a href="<?php echo Mage::getBaseUrl(); ?>" class="logo"><img src="<?php echo $this->getSkinUrl(); ?>images/logo.png" alt=""/></a>
-            <a href="<?php echo Mage::getBaseUrl(); ?>" class="redBtn buyNow">BUY NOW</a>
+            <a href="<?php echo Mage::getBaseUrl(); ?>" class="logo">
+                <img src="<?php echo $this->getSkinUrl(); ?>images/logo.png" alt=""/></a>
+            <a href="<?php echo Mage::getBaseUrl(); ?>#order" class="redBtn buyNow">BUY NOW</a>
+
             <div id="navigation">
                 <ul>
-                    <li><a href="https://www.amazon.com/BoozAid-Supplement-Helps-Relief-Liver-Replenishment-Reduce-Hangovers-Scientifically/product-reviews/B01D26MZVU/ref=dp_db_cm_cr_acr_txt?ie=UTF8&showViewpoints=1">REVIEWS</a></li>
-                    <li><a href="<?php echo Mage::getBaseUrl(); ?>faq">FAQ</a></li>
-                    <li><a href="https://boozaid.com/blog/">BLOG</a></li>
-                    <li><a href="<?php echo Mage::getBaseUrl(); ?>contactus">CONTACT</a></li>
+                    <li>
+                        <a href="<?php echo Mage::getBaseUrl();?>#description">
+                            What Is Boozaid
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            Directions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.amazon.com/BoozAid-Supplement-Helps-Relief-Liver-Replenishment-Reduce-Hangovers-Scientifically/product-reviews/B01D26MZVU/ref=dp_db_cm_cr_acr_txt?ie=UTF8&showViewpoints=1">
+                            Testimony
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            Satisfaction Guaranteed
+                        </a>
+                    </li>
                 </ul>
             </div>
+
             <a href="javascript:void(0);" id="menuBtn"><span></span><span></span><span></span></a>
         </div>
     </div>

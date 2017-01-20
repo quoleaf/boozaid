@@ -1,0 +1,40 @@
+<?php
+/**
+ * How to call in CMS page
+ * {{block type='mageplaza_betterblog/post_recent'  post_count="1" block_name="Latest from the blog" template='mageplaza_betterblog/post/recent.phtml'}}
+ * {{block type='mageplaza_betterblog/post_cat'  post_count="1" category_id="4" block_name="Latest news" template='mageplaza_betterblog/post/recent.phtml'}}
+ */
+?>
+
+
+<?php $post = $this->getPosts(); ?>
+<?php $postCount = $this->getPostCount(); ?>
+<?php $i=0; ?>
+    <div class="grid12-4">
+        <div class="feature">
+            <?php foreach ($post as $post): ?>
+                <?php if($i >= $postCount) break;?>
+                <div class="post-list-item">
+                    <div class="post-image">
+                        <?php if ($post->getImage()) :?>
+                            <img class="zoom" src="<?php echo Mage::helper('mageplaza_betterblog/post_image')->init($post, 'image');?>" alt="<?php echo $this->escapeHtml($post->getPostTitle());?>" />
+                        <?php endif;?>
+                    </div>
+                    
+                    <div class="inner">
+                        <div class="mc-post-info">
+                            <?php echo Mage::helper('core')->formatDate($post->getCreatedAt(), 'medium', true) ?> 
+                                <?php if(Mage::helper('mageplaza_betterblog')->canShowCommentCount()) echo '| '. Mage::helper('mageplaza_betterblog')->formatCommentCount($post->getCommentCount()); ?>
+                        </div>
+                        
+                        <a href="<?php echo $post->getPostUrl(); ?>" ><?php echo $post->getPostTitle(); ?></a>
+                        
+                        <div class="post-short-description">
+                            <p><?php echo $post->getPostExcerpt();?><?php echo $this->__('...'); ?></p>
+                        </div>
+                    </div>
+                </div>
+                <?php $i++; ?>
+            <?php endforeach; ?>
+        </div>
+    </div>

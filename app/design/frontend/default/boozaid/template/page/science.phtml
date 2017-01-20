@@ -1,0 +1,187 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     rwd_default
+ * @copyright   Copyright (c) 2006-2016 X.commerce, Inc. and affiliates (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php
+/**
+ * Template for Mage_Page_Block_Html
+ */
+?>
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7 ]> <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js"> <!--<![endif]-->
+
+<head>
+<?php echo $this->getChildHtml('head') ?>
+</head>
+<body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
+<?php echo $this->getChildHtml('after_body_start') ?>
+<div class="wrapper">
+    <?php echo $this->getChildHtml('global_notices') ?>
+    <div class="page">
+        <?php echo $this->getChildHtml('header') ?>
+        <div class="main-container col1-layout">
+            <div class="main">
+                <?php echo $this->getChildHtml('breadcrumbs') ?>
+                <div class="col-main">
+                    <h1>
+                    	What is BoozAid?
+                    </h1>
+
+                    <div class="inner">
+                    	<ul class="top">
+                    		<li>
+                    			It’s a powerful, scientific blend of nutrients, antioxidants, herbs, vitamins and natural peptides formulated to help you avoid the “morning after” conditions of excessive partying, including: stomach irritation, headache, brain fog, anxiety, nausea and fatigue.
+                    		</li>
+
+                    		<li>
+                    			It works quickly to shield the body from toxic by-products restoring you to a state of healthy, natural balance. It also offers natural peptides to harmonize the neurotransmitter balance in the brain so you wake up feeling refreshed and clear-headed.
+                    		</li>
+
+                    		<li>
+                    			Although BoozAid cannot fully shield you against over-indulging from time to time, you can shield yourself against the worst effects of alcohol by taking 2-4 capsules of BoozAid with 8 oz of water before bedtime.
+                    		</li>
+
+                    		<li>
+                    			BoozAid is physician-formulated, combining bona fide science with wholesome beneficial ingredients.
+                    		</li>
+                    	</ul>
+                    </div>
+
+                    <iframe src="https://www.youtube.com/embed/fk61KZ_bH9I" frameborder="0" allowfullscreen></iframe>
+
+                    <h3>
+                    	Ingredients
+                    </h3>
+
+                    <div class="inner">
+
+                    	<ul class="ingredients">
+                    		<li>
+                    			<img src="<?php echo $this->getSkinUrl(); ?>images/ingredients/MilkThistle.png">
+                    			
+                    			<span>
+	                    			<strong>Milk Thistle</strong> has been used for over two thousand years due to its remarkable cleansing and support of the liver. Research has proven that thistle helps with:
+									
+									<ul>
+										<li>
+											- The detoxification of poisons—such as alcohol
+										</li>
+
+										<li>
+											- The regeneration of damaged liver tissue
+										</li>
+
+										<li>
+											- Improved digestion
+										</li>
+									</ul>
+                    			</span>
+                    		</li>
+
+                    		<li>
+                    			<img src="<?php echo $this->getSkinUrl(); ?>images/ingredients/Oriental-Raisin-Tree.png">
+                    			
+                    			<span>
+	                    			<strong>Oriental Raisin Tree</strong> , one of the most powerful substances in BoozAid, is harvested from the Holvenia Dulcis plant. In Asia, for over a thousand years, this plant has been used to brew a special tea that aids in the discomfort that results from a night of partying. Only recently has the active ingredient, Dihydromyricetin (a natural plant flavonoid), been isolated and extracted from the the Oriental Raisin Tree.
+                    			</span>
+                    		</li>
+
+                    		<li>
+                    			<img src="<?php echo $this->getSkinUrl(); ?>images/ingredients/Vitamin-B.png">
+                    			
+                    			<span>
+	                    			<strong>B Vitamins / Thiamine NAC</strong> is thought to work even better when combined with thiamine (also known as vitamin B6). Vitamin B6 may also help lessen hangover symptoms. Since alcohol depletes vitamin B in the body, and B vitamins are required to help eliminate alcohol from the body, a B-vitamin supplement should be taken beforehand, as well as the next day.
+                    			</span>
+                    		</li>
+
+                    		<li>
+                    			<img src="<?php echo $this->getSkinUrl(); ?>images/ingredients/Glutamine.png">
+                    			
+                    			<span>
+	                    			<strong>Glutamine</strong> Ingesting glutamine will help to minimize reaction known asglutamine rebound. Alcohol inhibits glutamine, a natural stimulant in your body. This is partly why alcohol has a depressive effect that may make you fall asleep easily.
+                    			</span>
+                    		</li>
+
+                    		<li>
+                    			<img src="<?php echo $this->getSkinUrl(); ?>images/ingredients/Magnesium.png">
+                    			
+                    			<span>
+	                    			<strong>Magnesium</strong>, Another nutrient depleted by alcohol, and it’s one in which many are already deficient. Plus, magnesium has anti-inflammatory properties that may help to reduce certain hangover symptoms such as pounding headache.
+                    			</span>
+                    		</li>
+
+                    		<li>
+                    			<img src="<?php echo $this->getSkinUrl(); ?>images/ingredients/Acerole-Berry-Extract.png">
+                    			
+                    			<span>
+	                    			<strong>Acerole Berry Extract</strong> is very high in vitamins A and C. It also contains thiamine and riboflavin, which are known to be natural energy boosters.
+                    			</span>
+                    		</li>
+
+                    		<li>
+                    			<img src="<?php echo $this->getSkinUrl(); ?>images/ingredients/Bupleurum-Root-Powder.png">
+                    			
+                    			<span>
+	                    			<strong>Bupleurum Root Powder</strong> Ingesting glutamine will help to minimize reaction known as glutamine rebound. Has been known to combat fatigue, headaches, insomnia and depression. It also assists in protecting the liver.
+                    			</span>
+                    		</li>
+
+                    		<li>
+                    			<img src="<?php echo $this->getSkinUrl(); ?>images/ingredients/Artichoke-Leaf-Powder.png">
+                    			
+                    			<span>
+	                    			<strong>Artichoke Leaf Powder (Cilarin)</strong> is ideal for hangovers as it decreases nausea and vomiting.
+                    			</span>
+                    		</li>
+
+                    		<li>
+                    			<img src="<?php echo $this->getSkinUrl(); ?>images/ingredients/Kudzu-Powder.png">
+                    			
+                    			<span>
+	                    			<strong>Kudzu Powder</strong> is beneficial in boosting the metabolism and detoxifying. Studies have also shown that kudzu can curb the craving for alcohol and lessen symptoms of alcohol withdrawal.is is partly why alcohol has a depressive effect that may make you fall asleep easily.
+                    			</span>
+                    		</li>
+                    	</ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <?php echo $this->getChildHtml('footer_before') ?>
+        <?php echo $this->getChildHtml('footer') ?>
+        <?php echo $this->getChildHtml('global_cookie_notice') ?>
+        <?php echo $this->getChildHtml('before_body_end') ?>
+    </div>
+</div>
+<?php echo $this->getAbsoluteFooter() ?>
+</body>
+</html>
+

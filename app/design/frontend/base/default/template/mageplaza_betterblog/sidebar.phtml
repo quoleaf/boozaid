@@ -1,0 +1,54 @@
+<ul class="accordion-menu">
+    <?php $posts = $this->getPosts();?>
+    <li>
+        <input type="checkbox" id="accordion-one" checked/>
+        <label for="accordion-one"> 
+            <?php echo $this->__('Recent posts'); ?>
+        </label>
+        <section>
+            <ul>
+                <?php foreach ($posts as $post): ?>
+                    <li><a href="<?php echo $post->getPostUrl(); ?>"><?php echo $post->getPostTitle(); ?></a></li>
+                <?php endforeach; ?>
+            </ul>
+        </section>
+    </li>
+
+    <?php $mostviews = $this->getMostviews(); ?>
+    <?php if(!is_null($mostviews) AND $mostviews->getSize() > 0):?>
+    <li>
+        <input type="checkbox" id="accordion-second"/>
+        <label for="accordion-second"> 
+            <?php echo $this->__('Most Views'); ?> 
+        </label>
+        <section>
+            <ul>
+                <?php foreach ($mostviews as $post): ?>
+                    <li><a href="<?php echo $post->getPostUrl(); ?>"><?php echo $post->getPostTitle(); ?></a></li>
+                <?php endforeach; ?>
+            </ul>
+        </section>
+    </li>
+    <?php endif; ?>
+
+    <?php $_categories = $this->getCategories(); ?>
+    <?php if ($_categories->getSize() > 0) : ?>
+    <li>
+        <input type="checkbox" id="accordion-third"/>
+        <label for="accordion-third">
+            <?php echo Mage::helper('mageplaza_betterblog')->__('Categories') ?> 
+        </label>
+        <section>
+            <ul>
+                <?php foreach ($_categories as $_category) : ?>
+                    <li class="category-list-item">
+                        <a href="<?php echo $_category->getCategoryUrl() ?>">
+                            <?php echo $_category->getName(); ?>
+                        </a>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        </section>
+    </li>
+    <?php endif; ?>
+</ul>

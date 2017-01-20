@@ -19,7 +19,25 @@
    			</layouts>
   		</page>
 
-  		<page>
+      <page>
+        <layouts>
+          <shippingpolicy>
+            <label>Shipping Policy</label>
+            <template>page/shipping-policy.phtml</template>
+          </shippingpolicy>
+        </layouts>
+      </page>
+
+      <page>
+        <layouts>
+          <science>
+            <label>Science</label>
+            <template>page/science.phtml</template>
+          </science>
+        </layouts>
+      </page>
+
+      <page>
    			<layouts>
     			<contactus>
      				<label>Contact Us</label>
