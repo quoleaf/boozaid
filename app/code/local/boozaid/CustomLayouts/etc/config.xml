@@ -8,45 +8,50 @@
  	<global>
   		<page>
    			<layouts>
-    			<landingpage>
+    			<landingpage module="page" translate="label">
      				<label>Landing Page</label>
      				<template>page/landingpage.phtml</template>
+                    <layout_handle>landingpage</layout_handle>
     			</landingpage>
    			</layouts>
   		</page>
 
   		<page>
    			<layouts>
-    			<faq>
+    			<faq module="page" translate="label">
      				<label>FAQ</label>
      				<template>page/faq.phtml</template>
+                    <layout_handle>faq</layout_handle>
     			</faq>
    			</layouts>
   		</page>
 
-      <page>
-        <layouts>
-          <shippingpolicy>
-            <label>Shipping Policy</label>
-            <template>page/shipping-policy.phtml</template>
-          </shippingpolicy>
-        </layouts>
-      </page>
+        <page>
+            <layouts>
+            <shippingpolicy module="page" translate="label">
+                <label>Shipping Policy</label>
+                <template>page/shipping-policy.phtml</template>
+                <layout_handle>shippingpolicy</layout_handle>
+            </shippingpolicy>
+            </layouts>
+        </page>
 
-      <page>
-        <layouts>
-          <science>
-            <label>Science</label>
-            <template>page/science.phtml</template>
-          </science>
-        </layouts>
-      </page>
+        <page>
+            <layouts>
+                <science module="page" translate="label">
+                    <label>Science</label>
+                    <template>page/science.phtml</template>
+                    <layout_handle>science</layout_handle>
+                </science>
+            </layouts>
+        </page>
 
-      <page>
+        <page>
    			<layouts>
-    			<contactus>
+    			<contactus module="page" translate="label">
      				<label>Contact Us</label>
      				<template>page/contactus.phtml</template>
+                    <layout_handle>contactus</layout_handle>
     			</contactus>
    			</layouts>
   		</page>
