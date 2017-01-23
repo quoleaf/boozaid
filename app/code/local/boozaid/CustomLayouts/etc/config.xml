@@ -56,4 +56,14 @@
    			</layouts>
   		</page>
  	</global>
+
+     <frontend>
+        <layout>
+            <updates>
+                <boozaid_CustomLayouts>
+                    <file>boozaid_CustomLayouts.xml</file>
+                </boozaid_CustomLayouts>
+            </updates>
+        </layout>
+    </frontend>
 </config>
