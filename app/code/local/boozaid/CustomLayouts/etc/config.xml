@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <config>
-  <modules>
-    <boozaid_CustomLayouts>
-    <version>0.0.1</version>
-    </boozaid_CustomLayouts>
-   </modules>
+    <modules>
+        <boozaid_CustomLayouts>
+            <version>0.0.1</version>
+        </boozaid_CustomLayouts>
+    </modules>
  	<global>
   		<page>
    			<layouts>

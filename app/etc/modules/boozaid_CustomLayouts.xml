@@ -1,9 +1,12 @@
 <?xml version="1.0"?>
 <config>
- <modules>
-  <boozaid_CustomLayouts>
-   <codePool>local</codePool>
-   <active>true</active>
-  </boozaid_CustomLayouts>
- </modules>
+	<modules>
+	  	<boozaid_CustomLayouts>
+	   		<active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Mage_Page />
+            </depends>
+	  	</boozaid_CustomLayouts>
+	</modules>
 </config>
