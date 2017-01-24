@@ -3691,6 +3691,7 @@ body.mageplaza-betterblog-post-view {
 						  	color: #798f9a;
 						  	margin: 0 0 15px 0;
 						  	display: flex;
+						  	visibility: hidden;
 
 						  	ul {
 						  		width: 100%;
@@ -3730,6 +3731,7 @@ body.mageplaza-betterblog-post-view {
     						overflow-y: auto;
     						width: 100%;
     						float: left;
+    						visibility: visible;
 
 						  	&::-webkit-scrollbar,&::-webkit-scrollbar {
 								width:13px;
