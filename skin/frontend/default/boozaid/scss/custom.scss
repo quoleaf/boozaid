@@ -3563,21 +3563,53 @@ body.mageplaza-betterblog-post-view {
 
 							ul {
 								list-style: disc;
+								margin: 0 40px 0 40px;
 
 								li {
+									font-family: "proxima_novalight",Arial,sans-serif;
 									width: 100%;
 									float: left;
 									padding: 7px 0 7px 0;
+									color: #848484;
+									font-size: 18px;
+
+									@media only screen and (max-width : 1370px) {
+										font-size: 14px;
+									} 
+
+									@media only screen and (max-width : 991px) {
+										font-size: 18px;
+									}
+
+									@media only screen and (max-width : 620px) {
+										font-size: 14px;
+									}
 								}
 							}					
 
 							ol {
 								list-style: decimal;
+								margin: 0 40px 0 40px;
 
 								li {
+									font-family: "proxima_novalight",Arial,sans-serif;
 									width: 100%;
 									float: left;
 									padding: 7px 0 7px 0;
+									color: #848484;
+									font-size: 18px;
+
+									@media only screen and (max-width : 1370px) {
+										font-size: 14px;
+									} 
+
+									@media only screen and (max-width : 991px) {
+										font-size: 18px;
+									}
+
+									@media only screen and (max-width : 620px) {
+										font-size: 14px;
+									}
 								}
 							}																										
 						}
