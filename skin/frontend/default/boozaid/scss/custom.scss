@@ -2661,6 +2661,7 @@ body.checkout-onepage-index {
 
 	.block-progress dd address {
 		font-style: normal;
+		font-size: 16px;
 	}
 }
 
@@ -3727,6 +3728,8 @@ body.mageplaza-betterblog-post-view {
 						  	border-top-color: #2f3593;
 						  	height: 170px;
     						overflow-y: auto;
+    						width: 100%;
+    						float: left;
 
 						  	&::-webkit-scrollbar,&::-webkit-scrollbar {
 								width:13px;
