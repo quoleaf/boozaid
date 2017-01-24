@@ -390,6 +390,8 @@ body {
 	// color: #fff;
 	// -ms-behavior: url(backgroundsize.min.htc);
 	background: #f7f7f7;
+	width: 100%;
+	float: left;
 
 	h1 {
 		color: #3f3c3c;
@@ -401,7 +403,7 @@ body {
 }
 
 #reviews .section {
-	min-height: 683px;
+	min-height: 722px;
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
@@ -708,6 +710,8 @@ body {
 	background: #2c3392;
 	text-align: center;
 	padding: 33px 0;
+	width: 100%;
+	float: left;
 }
 
 .blueBar .redBtn {
