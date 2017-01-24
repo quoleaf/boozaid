@@ -420,7 +420,7 @@ body {
 	margin: 0 0 70px;
 	padding: 0 0 0 120px;
 	font-family: 'proxima_novalight', Arial, sans-serif;
-	font-size: 24.72px;
+	font-size: 20.72px;
 	list-style: none;
 	width: 50%;
 }
@@ -1963,6 +1963,15 @@ body.cms-home, .cms-index-noroute {
 				    	font-size: 26px;
 				    }
 				}
+
+				.slick-slide {
+					img  {
+						width: 260px;
+					    margin: 0 auto;
+					    height: 170px;
+					    display: block;
+					}
+				}
 			}
 		}
 
@@ -3341,13 +3350,14 @@ body.mageplaza-betterblog-index-index, body.mageplaza-betterblog-category-view {
 
 						    @media only screen and (max-width : 991px) {
 						    	width: 100%;
+						    	margin: 0;
 						    	
 							    &:nth-child(3n+0) {
 							    	margin: 0!important;
 							    }
 
 							    &:nth-child(2n+0) {
-							    	margin: 0!important;
+							    	margin: 25px 0 25px 0!important;
 							    }	
 						    }
 
@@ -3373,6 +3383,11 @@ body.mageplaza-betterblog-index-index, body.mageplaza-betterblog-category-view {
 								padding: 35px 50px 50px 50px;
 								width: 100%;
 								float: left;
+								height: 350px;
+
+								@media only screen and (max-width : 991px) {
+									height: auto;
+								}
 
 								.mc-post-info {
 									font-family: "proxima_novalight",Arial,sans-serif;
@@ -3545,7 +3560,7 @@ body.mageplaza-betterblog-post-view {
 								width: 100%;
 								float: left;
 							}
-							
+
 							p {
 								font-family: "proxima_novalight",Arial,sans-serif;
 								padding:0;
