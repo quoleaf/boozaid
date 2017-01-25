@@ -3956,6 +3956,14 @@ body {
 						visibility: hidden;
 					}
 
+					&:nth-child(5), &:nth-child(6) {
+						a {
+							&:hover {
+								color: #fff!important;
+							}
+						}
+					}
+
 					a {
 						font-family: 'proxima_novalight', Arial, sans-serif;
 						color: #fff;
