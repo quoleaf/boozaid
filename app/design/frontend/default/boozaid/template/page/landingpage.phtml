@@ -529,5 +529,11 @@ window.__lo_site_id = 57238;
 	<script src="<?php echo $this->getSkinUrl(); ?>js/boozaidjs/jquery.placeholder.min.js"></script>
 	<script src="<?php echo $this->getSkinUrl(); ?>js/boozaidjs/custom.js"></script>
 
+
+	<script type="text/javascript">
+		if(jQuery('body #topBar .FreeShipping span a:contains("LOG OUT")').length){
+		    jQuery('body').addClass('custom-customer-logged-in');
+		}
+	</script>
 	</body>
 </html>

@@ -3804,7 +3804,7 @@ body {
 		}
 	}
 
-	&.customer-logged-in {
+	&.customer-logged-in, &.custom-customer-logged-in{
 		#topBar {
 			.FreeShipping {
 				
