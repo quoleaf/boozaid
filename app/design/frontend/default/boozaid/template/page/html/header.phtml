@@ -30,7 +30,23 @@
 <div class="mainWrapper">
     <div id="topBar">
         <div class="FreeShipping">
-            <img src="<?php echo $this->getSkinUrl(); ?>images/free-shipping.gif">
+            <div class="section">
+                <span>
+                    <img src="<?php echo $this->getSkinUrl(); ?>images/free-shipping.gif">
+                </span>
+                <span>
+                     <?php if (Mage::helper('customer')->isLoggedIn() ): ?>
+                        <a  href="<?php echo Mage::helper('customer')->getAccountUrl(); ?>"><?php echo $this->__('My Account')?></a>  &nbsp;| <a  href="<?php echo Mage::helper('customer')->getLogoutUrl(); ?>"><?php echo $this->__('LOG OUT')?></a>
+                        <?php 
+                            
+                        else: ?>
+                            <img src="<?php echo $this->getSkinUrl(); ?>images/signin_ico.png">
+                             <a class="signin info" href="<?php echo Mage::helper('customer')->getLoginUrl(); ?>"><?php echo $this->__('SIGN IN') ?></a>
+                        <?php 
+                            
+                    endif; ?>
+                </span>
+            </div>
         </div>
         <div class="section">
             <?php
@@ -61,6 +77,17 @@
                         <a href="javascript:void(0);" style="cursor: not-allowed;">
                             Satisfaction Guaranteed
                         </a>
+                    </li>
+                    <li style="display: none;" class="account-nav">
+                         <?php if (Mage::helper('customer')->isLoggedIn() ): ?>
+                        <a  href="<?php echo Mage::helper('customer')->getLogoutUrl(); ?>"><?php echo $this->__('LOG OUT')?></a>
+                    <?php 
+                        
+                    else: ?>
+                         <a class="signin info" href="<?php echo Mage::helper('customer')->getLoginUrl(); ?>"><?php echo $this->__('SIGN IN') ?></a>
+                    <?php 
+                        
+                endif; ?>
                     </li>
                 </ul>
             </div>

@@ -3797,10 +3797,74 @@ body.mageplaza-betterblog-post-view {
 /* Main Container for General */
 
 body {
+
+	@media only screen and (max-width : 991px) { 
+		#mm-navigation .account-nav {
+			display: block!important;
+		}
+	}
+
+	&.customer-logged-in {
+		#topBar {
+			.FreeShipping {
+				
+				img {
+					display: inline;
+				}
+
+				span {
+				    position: relative;
+				    bottom: 19px;
+				    padding: 0;
+
+				    @media only screen and (max-width : 1370px) { 
+				    	bottom: 9px;
+				    }
+
+				    a {
+				    	font-family:  'proxima_nova', Arial, sans-serif;
+				    	font-size: 20px;
+				    	color: #fff;
+				    	text-transform: uppercase;
+				    	text-decoration: none;
+				    	padding: 0 0 0 10px;
+
+				    	@media only screen and (max-width : 1370px) { 
+				    		font-size: 16px;
+				    	}
+				    }
+
+				    &:nth-child(1) {
+				    	margin: 0 0 0 235px;
+				    	padding:0;
+				    	bottom:0;
+
+				    	@media only screen and (max-width : 1370px) { 
+					    	margin:0;
+					    	top: 7px;
+
+					    	img {
+					    		width: 655px;
+					    	}
+					    }
+				    }
+
+				    &:nth-child(2) {
+				    	@media only screen and (max-width : 991px) { 
+					    	display: none;
+					    }
+			    	}
+				}
+			}
+		}
+	}
+
 	.page {
 		.main-container{
 		    padding: 170px 0 75px 0;
 		    max-width: 1300px;
+		    min-height: 100vh;
+		    height: auto;
 
 		    @media only screen and (max-width : 1370px) {
 				max-width: 967px;
@@ -3827,11 +3891,50 @@ body {
 		.FreeShipping {
 			background: #ee1b22;
 			width: 100%;
-			height: auto;
+			height: 54px;
 			text-align: center;
 
 			@media only screen and (max-width : 760px) { 
 				display: none;
+			}
+
+			img {
+				display: inline;
+			}
+
+			span {
+			    position: relative;
+			    bottom: 19px;
+			    padding: 0 0 0 125px;
+
+			    @media only screen and (max-width : 1370px) { 
+			    	padding: 0;
+			    }
+
+			    a {
+			    	font-family:  'proxima_nova', Arial, sans-serif;
+			    	font-size: 20px;
+			    	color: #fff;
+			    	text-transform: uppercase;
+			    	text-decoration: none;
+			    	padding: 0 0 0 10px;
+			    }
+
+			    &:nth-child(1) {
+			    	margin: 0 0 0 235px;
+			    	padding:0;
+			    	bottom:0;
+
+			    	@media only screen and (max-width : 1370px) { 
+				    	margin:0;
+				    }
+			    }
+
+			    &:nth-child(2) {
+			    	@media only screen and (max-width : 991px) { 
+				    	display: none;
+				    }
+			    }
 			}
 		}
 

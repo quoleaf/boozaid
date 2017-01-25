@@ -116,7 +116,7 @@
     <default>
         <design>
             <head translate="default_description" module="page">
-                <default_title>Magento Commerce</default_title>
+                <default_title>Boozaid</default_title>
                 <default_description>Default Description</default_description>
                 <default_keywords>Magento, Varien, E-commerce</default_keywords>
                 <default_robots>*</default_robots>
@@ -125,7 +125,7 @@
             </head>
             <header translate="welcome" module="page">
                 <logo_src>images/logo.gif</logo_src>
-                <logo_alt>Magento Commerce</logo_alt>
+                <logo_alt>Boozaid</logo_alt>
                 <logo_src_small>images/logo.gif</logo_src_small>
                 <welcome>Default welcome msg!</welcome>
             </header>
