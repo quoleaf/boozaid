@@ -47,6 +47,16 @@
         </page>
 
         <page>
+            <layouts>
+                <satisfactionguarantee module="page" translate="label">
+                    <label>Satisfaction Guarantee</label>
+                    <template>page/satisfactionguarantee.phtml</template>
+                    <layout_handle>satisfactionguarantee</layout_handle>
+                </satisfactionguarantee>
+            </layouts>
+        </page>
+
+        <page>
    			<layouts>
     			<contactus module="page" translate="label">
      				<label>Contact Us</label>

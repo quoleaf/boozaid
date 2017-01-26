@@ -3170,6 +3170,7 @@ body.cms-the-science-of-boozaid-2 {
 
 			.main {
 				.col-main {
+
 					iframe {
 						height: 631px;
 						width: 100%;
@@ -3263,14 +3264,28 @@ body.cms-the-science-of-boozaid-2 {
 								align-items: center;
 								padding: 0 0 15px 0;
 
+								@media only screen and (max-width : 500px) {
+									display: block;
+								}
 
 								img {
 									display: inline-block;
 								    float: left;
 								    margin: 0 30px 0 0;
+
+								    @media only screen and (max-width : 500px) {
+								    	float: none;
+								    	margin: 0 auto;
+								    	display: block;
+								    }
 								}
 
 								span {
+									@media only screen and (max-width : 500px) {
+										width: 100%;
+										float: left;
+										padding: 20px 0 20px 0;
+									}
 
 									ul {
 										list-style: disc;
@@ -3292,6 +3307,62 @@ body.cms-the-science-of-boozaid-2 {
 		}
 	}
 }
+
+
+/* Shipping policies */
+
+body.cms-satisfaction-guarantee {
+	.page {
+		background: #f6f6f6;
+
+		.main-container {
+			.breadcrumbs {
+				display: none;
+			}
+
+			.main {
+				.col-main {
+					h2 {
+						margin: 0 0 25px 0;
+
+						@media only screen and (max-width : 500px) {
+							text-align: center;
+						}
+					}
+
+					.inner {
+						width: 100%;
+						float: left;
+						margin: 0 0 25px 0;
+
+						&:last-child {
+							margin: 0;
+						}
+
+						ul {
+							list-style: disc;
+							margin: 10px 0 10px 40px;
+
+							li {
+								margin: 0 0 15px 0;
+							}
+						}
+
+						ol {
+							margin: 10px 0 10px 40px;
+							list-style: decimal;
+								
+							li {
+								margin: 0 0 15px 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 
 /* Blog */
 
@@ -3446,9 +3517,6 @@ body.mageplaza-betterblog-index-index, body.mageplaza-betterblog-category-view {
 										color: #848484;
 										font-size: 18px;
 
-										@media only screen and (max-width : 1370px) {
-											font-size: 14px;
-										} 
 
 										@media only screen and (max-width : 991px) {
 											font-size: 18px;
@@ -3865,6 +3933,7 @@ body {
 		    max-width: 1300px;
 		    min-height: 100vh;
 		    height: auto;
+		    font-size: 18px;
 
 		    @media only screen and (max-width : 1370px) {
 				max-width: 967px;
@@ -3881,6 +3950,7 @@ body {
 
 		    @media only screen and (max-width : 540px) { 
 		    	padding: 90px 15px 75px 15px;
+		    	font-size: 16px;
 		    }
 		}
 	}
@@ -4059,13 +4129,6 @@ body {
 						visibility: hidden;
 					}
 
-					&:nth-child(5), &:nth-child(6) {
-						a {
-							&:hover {
-								color: #fff!important;
-							}
-						}
-					}
 
 					a {
 						font-family: 'proxima_novalight', Arial, sans-serif;
