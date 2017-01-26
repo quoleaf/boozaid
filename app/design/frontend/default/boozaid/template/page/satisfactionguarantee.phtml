@@ -1,0 +1,116 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     rwd_default
+ * @copyright   Copyright (c) 2006-2016 X.commerce, Inc. and affiliates (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php
+/**
+ * Template for Mage_Page_Block_Html
+ */
+?>
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7 ]> <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js"> <!--<![endif]-->
+
+<head>
+<?php echo $this->getChildHtml('head') ?>
+</head>
+<body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
+<?php echo $this->getChildHtml('after_body_start') ?>
+<div class="wrapper">
+    <?php echo $this->getChildHtml('global_notices') ?>
+    <div class="page">
+        <?php echo $this->getChildHtml('header') ?>
+        <div class="main-container col1-layout">
+            <div class="main">
+                <?php echo $this->getChildHtml('breadcrumbs') ?>
+                <div class="col-main">
+                	<h2>
+                		SHIPPING &amp; RETURNS POLICY
+                	</h2>
+                    <div class="inner">
+                    	<strong>
+                    		RETURNS
+                    	</strong>
+                    	
+                    	<ul>
+                    		<li>
+                    			We want you to be totally satisfied with your order, however we understand if a product doesn't work out and want to make sure the return is as painless as possible.
+
+                    		</li>
+                    	</ul>
+                    </div>
+
+                    <div class="inner">
+                    	<strong>
+                    		ONLINE PURCHASE RETURN
+                    	</strong>
+                    	
+                    	<ul>
+                    		<li>
+                    			If you wish to return a product, please do so within 30 days from the ship date for a refund on the purchase price, minus shipping, handling charges. Refunds will be credited to the original credit card use for payment. Purchases of gift certificates and sale items cannot be returned for a refund.
+                    		</li>
+                    		<li>
+                    			Naturally, we cannot take returns products not bought online at <a href="<?php echo Mage::getBaseUrl();?>">Boozaid</a>
+                    		</li>
+                    		<li>
+                    			To return items to www.boozaid.com, please follow these simple steps:
+                    			<ol>
+		                    		<li>
+		                    			Call our customer service at (877) 215-0155 M-F PST 8-6
+		                    		</li>
+		                    		<li>
+		                    			We recommend shipping your return with a service that provides tracking and insurance as we are not responsible for any packages lost in transit. All returns should be mailed to:
+		                    				
+		                    			<ul>
+		                    				<li>
+		                    					La Canada Ventures Inc, 448 N San Mateo Drive, San Mateo, CA 94401 
+		                    				</li>
+		                    			</ul>
+		                    		</li>	
+		                    		<li>
+		                    			Your return will be processed promptly upon arrival, and we will send you a confirmation by email. Please allow 2-3 weeks from the shipping date for your account to be credited. Shipping and handling charges are not refundable.
+		                    		</li>
+		                    	</ol>
+                    		</li>
+                    	</ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php echo $this->getChildHtml('footer_before') ?>
+        <?php echo $this->getChildHtml('footer') ?>
+        <?php echo $this->getChildHtml('global_cookie_notice') ?>
+        <?php echo $this->getChildHtml('before_body_end') ?>
+    </div>
+</div>
+<?php echo $this->getAbsoluteFooter() ?>
+</body>
+</html>
+
