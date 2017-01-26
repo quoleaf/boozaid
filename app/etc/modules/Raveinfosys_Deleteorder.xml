@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Raveinfosys_Deleteorder>
-            <active>true</active>
+            <active>false</active> <!-- Set true to activate DELETE ORDER Module -->
             <codePool>community</codePool>
         </Raveinfosys_Deleteorder>
     </modules>
