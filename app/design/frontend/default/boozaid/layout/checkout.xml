@@ -522,6 +522,9 @@ One page checkout order review block
 
     <checkout_onepage_success translate="label">
         <label>One Page Checkout Success</label>
+        <reference name="head">
+            <action method="setData" translate="title"><key>title</key><value>Boozaid | Success</value></action>
+        </reference>
         <reference name="root">
             <action method="setTemplate"><template>page/1column.phtml</template></action>
         </reference>
