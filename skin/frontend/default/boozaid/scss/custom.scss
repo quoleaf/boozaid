@@ -4001,7 +4001,7 @@ body {
 				    }
 
 				    &:nth-child(1) {
-				    	margin: 0 0 0 119px;
+				    	margin: 0 0 0 235px;
 				    	padding:0;
 				    	bottom:0;
 
@@ -4010,16 +4010,7 @@ body {
 					    	top: 7px;
 
 					    	img {
-					    		width: 850px;
-					            margin-top: 10px;
-					            position: relative;
-					            top: -5px;
-					    	}
-					    }
-
-					    @media only screen and (max-width : 991px) { 
-					    	img {
-					    		margin-top: 12px;
+					    		width: 655px;
 					    	}
 					    }
 				    }
@@ -4102,8 +4093,21 @@ body {
 			    	padding:0;
 			    	bottom:0;
 
+			    	img {
+			    		width: 850px;
+					    margin-top: 10px;
+					    position: relative;
+					    top: -5px
+			    	}
+
 			    	@media only screen and (max-width : 1370px) { 
 				    	margin:0;
+				    }
+
+				    @media only screen and (max-width : 991px) { 
+				    	img {
+				    		margin-top: 12px;
+				    	}
 				    }
 			    }
 
