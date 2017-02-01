@@ -3415,10 +3415,6 @@ body.cms-directions{
 								}
 							}
 
-							@media screen and (max-width: 480px){
-
-							}
-
 							.content1{
 								font-weight: bold;
 								font-size: 24px;
@@ -3462,6 +3458,7 @@ body.cms-directions{
 		}
 	}
 }
+
 
 
 
@@ -4004,7 +4001,7 @@ body {
 				    }
 
 				    &:nth-child(1) {
-				    	margin: 0 0 0 235px;
+				    	margin: 0 0 0 119px;
 				    	padding:0;
 				    	bottom:0;
 
@@ -4013,7 +4010,16 @@ body {
 					    	top: 7px;
 
 					    	img {
-					    		width: 655px;
+					    		width: 850px;
+					            margin-top: 10px;
+					            position: relative;
+					            top: -5px;
+					    	}
+					    }
+
+					    @media only screen and (max-width : 991px) { 
+					    	img {
+					    		margin-top: 12px;
 					    	}
 					    }
 				    }
@@ -4076,7 +4082,7 @@ body {
 			span {
 			    position: relative;
 			    bottom: 19px;
-			    padding: 0 0 0 125px;
+			    padding: 0 0 0 40px;
 
 			    @media only screen and (max-width : 1370px) { 
 			    	padding: 0;
