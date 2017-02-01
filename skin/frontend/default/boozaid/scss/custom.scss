@@ -3309,7 +3309,7 @@ body.cms-the-science-of-boozaid-2 {
 }
 
 
-/* Shipping policies */
+/* Satisfation Guarantee */
 
 body.cms-satisfaction-guarantee {
 	.page {
@@ -3362,6 +3362,84 @@ body.cms-satisfaction-guarantee {
 		}
 	}
 }
+
+
+/* Directions */
+
+body.cms-directions{
+	.page {
+		background: #f6f6f6;
+
+		.main-container {
+			.breadcrumbs {
+				display: none;
+			}
+
+			.main {
+				.col-main {
+					.inner {
+						width: 100%;
+						float: left;
+						margin: 0 0 25px 0;
+
+						&:last-child {
+							margin: 0;
+						}
+
+						ul {
+							list-style: disc;
+							margin: 10px 0 10px 40px;
+
+							li {
+								margin: 0 0 15px 0;
+							}
+						}
+
+						ol {
+							margin: 10px 0 10px 40px;
+							list-style: decimal;
+								
+							li {
+								margin: 0 0 15px 0;
+							}
+						}
+
+						table {
+							width: 60%;
+							border: 1px solid #e1e1e1;
+
+							@media only screen and (max-width : 991px) {
+								width: 100%;
+							}
+
+							tbody {
+								tr {
+									&:nth-child(even) {
+										background: #e9e9e9;
+									}
+
+									&:nth-child(odd) {
+										background: #fff;
+									}
+
+									td {
+										padding: 10px 15px 10px 15px;
+
+										p {
+											margin:0;
+											padding: 0;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 
 
 /* Blog */

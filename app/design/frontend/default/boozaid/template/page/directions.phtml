@@ -1,0 +1,222 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     rwd_default
+ * @copyright   Copyright (c) 2006-2016 X.commerce, Inc. and affiliates (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php
+/**
+ * Template for Mage_Page_Block_Html
+ */
+?>
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7 ]> <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js"> <!--<![endif]-->
+
+<head>
+<?php echo $this->getChildHtml('head') ?>
+</head>
+<body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
+<?php echo $this->getChildHtml('after_body_start') ?>
+<div class="wrapper">
+    <?php echo $this->getChildHtml('global_notices') ?>
+    <div class="page">
+        <?php echo $this->getChildHtml('header') ?>
+        <div class="main-container col1-layout">
+            <div class="main">
+                <?php echo $this->getChildHtml('breadcrumbs') ?>
+                <div class="col-main">
+                    <div class="inner">
+                    	<strong>
+                    		FOR INTERNATIONAL ORDERS
+                    	</strong>
+                    	
+                    	<ol>
+                    		<li>
+                    			International shipping is provided via FedEx; lead times can be up to two weeks for international packages.
+                    		</li>
+
+                    		<li>
+                    			BoozAid is not responsible for taxes, duty charges,customs fees or shipping loss or damages.
+                    		</li>
+
+                    		<li>
+                    			Different countries have different shipping rates,  BoozAid reserve right to adjust shipping fee.  You will be notified by email and we will await for your approval prior to shipping.
+                    		</li>
+
+                    		<li>
+                    			Contact us directly by phone (877) 215-0155 or email info@boozaid.com to cancel your order within 24 hours at no additional charge. Due to efficiency of our team, if order cancelled after 24 hours, you will be responsible for $25.00 restocking fee if your order has already been shipped
+                    		</li>
+
+                    		<li>
+                    			Various countries have different regulations, BoozAid is not responsible if shipment does not clear custom and we will not be able to refund the purchase.
+                    		</li>
+                    	</ol>
+                    </div>
+
+                    <div class="inner">
+                    	<strong>
+                    		SHIPPING POLICIES
+                    	</strong>
+                    	
+                    	<ol>
+                    		<li>
+                    			All of our products are in stock and will be shipped from our warehouse in US.
+                    		</li>
+
+                    		<li>
+                    			Most orders are shipped within 8 business hours and sent out via mailing carrier based on customer’s preference.
+                    		</li>
+
+                    		<li>
+                    			Orders placed after 3PM PST will be processed following day.  We ship Monday through Friday 9-3 PST excluding holidays and weekends.
+                    		</li>
+
+                    		<li>
+                    			Contact us directly by phone (877) 215-0155 or email info@boozaid.com to cancel your order within 24 hours at no additional charge. Due to efficiency of our team, if order cancelled after 24 hours, you will be responsible for $25.00 restocking fee if your order has already been shipped.
+                    		</li>
+
+                    		<li>
+                    			To receive tracking information, please select express delivery. USPS confirmation number verifies when parcel has been delivered and not used to track packages en route.  Unfortunately we are not responsible for damage, lost package or delay by USPS, FedEx or UPS.
+                    		</li>
+                    	</ol>
+                    </div>
+
+                    <div class="inner">
+                    	<table>
+							<tbody>
+								<tr>
+									<td>
+										<p dir="ltr">
+											Shipping 
+										</p>
+									</td>
+									<td>
+										<p dir="ltr">
+											Shipping Cost
+										</p>
+									</td>
+								</tr>
+                                <tr>
+                                    <td>
+                                        <p dir="ltr">
+                                            Free Standard shipping for purchase over $14.99 (Domestic)
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p dir="ltr">
+                                            $0.00
+                                        </p>
+                                    </td>
+                                </tr>
+
+								<tr>
+                                    <td>
+                                        <p dir="ltr">
+                                            Expedited Shipping (Domestic)
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p dir="ltr">
+                                            $7.50
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+									<td>
+										<p dir="ltr">
+											Standard Shipping (Domestic)
+										</p>
+									</td>
+									<td>
+										<p dir="ltr">
+											$2.99
+										</p>
+									</td>
+								</tr>
+                                <tr>
+                                    <td>
+                                        <p dir="ltr">
+                                            Free Standard shipping for order more than $100 (International)
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p dir="ltr">
+                                            $0.00
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p dir="ltr">
+                                            Expedited shipping via FedEx/UPS (International)
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p dir="ltr">
+                                            $25.00
+                                        </p>
+                                    </td>
+                                </tr>
+                                <!-- <tr>
+                                    <td>
+                                        <p dir="ltr">
+                                            First Class Mail ( 5-7 Business Days)
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p dir="ltr">
+                                            $3.50
+                                        </p>
+                                    </td>
+                                </tr> -->
+								<tr>
+									<td>
+										<p dir="ltr">
+											For fastest shipping please order via <a href="http://www.amazon.com/Booz-Aid-Hangover-Cure/dp/B01D26MZVU">Amazon</a>
+										</p>
+									</td>
+									<td>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php echo $this->getChildHtml('footer_before') ?>
+        <?php echo $this->getChildHtml('footer') ?>
+        <?php echo $this->getChildHtml('global_cookie_notice') ?>
+        <?php echo $this->getChildHtml('before_body_end') ?>
+    </div>
+</div>
+<?php echo $this->getAbsoluteFooter() ?>
+</body>
+</html>
+

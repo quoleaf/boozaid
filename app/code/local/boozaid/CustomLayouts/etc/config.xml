@@ -58,13 +58,24 @@
 
         <page>
    			<layouts>
-    			<contactus module="page" translate="label">
-     				<label>Contact Us</label>
-     				<template>page/contactus.phtml</template>
-                    <layout_handle>contactus</layout_handle>
-    			</contactus>
+    			<directions module="page" translate="label">
+     				<label>Directions</label>
+     				<template>page/directions.phtml</template>
+                    <layout_handle>directions</layout_handle>
+    			</directions>
    			</layouts>
   		</page>
+
+        <page>
+            <layouts>
+                <contactus module="page" translate="label">
+                    <label>Contact Us</label>
+                    <template>page/contactus.phtml</template>
+                    <layout_handle>contactus</layout_handle>
+                </contactus>
+            </layouts>
+        </page>
+
  	</global>
 
      <frontend>
