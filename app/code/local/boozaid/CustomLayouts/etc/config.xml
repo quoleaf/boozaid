@@ -66,15 +66,15 @@
    			</layouts>
   		</page>
 
-        <page>
-            <layouts>
-                <contactus module="page" translate="label">
-                    <label>Contact Us</label>
-                    <template>page/contactus.phtml</template>
-                    <layout_handle>contactus</layout_handle>
-                </contactus>
-            </layouts>
-        </page>
+      <page>
+          <layouts>
+              <contactus module="page" translate="label">
+                  <label>Contact Us</label>
+                  <template>page/contactus.phtml</template>
+                  <layout_handle>contactus</layout_handle>
+              </contactus>
+          </layouts>
+      </page>
 
  	</global>
 
@@ -82,7 +82,7 @@
         <layout>
             <updates>
                 <boozaid_CustomLayouts>
-                    <file>boozaid_CustomLayouts.xml</file>
+                    <file>Boozaid_CustomLayouts.xml</file>
                 </boozaid_CustomLayouts>
             </updates>
         </layout>
