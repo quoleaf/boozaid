@@ -4097,7 +4097,7 @@ body {
 			    		width: 850px;
 					    margin-top: 10px;
 					    position: relative;
-					    top: -5px
+					    top: -5px; 
 			    	}
 
 			    	@media only screen and (max-width : 1370px) { 
@@ -4112,9 +4112,11 @@ body {
 			    }
 
 			    &:nth-child(2) {
+
 			    	@media only screen and (max-width : 991px) { 
 				    	display: none;
 				    }
+				    
 			    }
 			}
 		}
