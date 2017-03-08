@@ -28,7 +28,7 @@
 <?php $_items = $this->getReviewsCollection()->getItems();?>
 <div class="box-collateral box-reviews" id="customer-reviews">
     <?php if (count($_items)):?>
-        <div class="review-heading">
+        <div class="review-heading" id="customer-reviews-lists">
             <h2>
                 <?php echo $this->__('Customer Reviews') ?>
                 <span><?php echo count($_items); ?> item(s)</span>

@@ -58,10 +58,10 @@
                     <span class="h1"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></span>
                 </div>
 
-               <!--  <div class="extra-info">
-                    <?php //echo $this->getReviewsSummaryHtml($_product, 'default', false)?>
-                    <?php //echo $this->getChildHtml('product_type_availability'); ?>
-                </div> -->
+               <div class="extra-info">
+                    <?php echo $this->getReviewsSummaryHtml($_product, 'default', false)?>
+                    <?php echo $this->getChildHtml('product_type_availability'); ?>
+                </div>
 
                 <div class="inner">
                     <div class="price-info">
