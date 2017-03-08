@@ -4298,8 +4298,10 @@ body {
 	.form-add{
 		margin-top: 35px;
 		h2{
-			margin-bottom: 20px;
 		    font-weight: normal;
+		}
+		.buttons-set{
+			border:0;
 		}
 		form{
 			width: 640px;
